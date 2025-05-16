@@ -16,7 +16,7 @@ async function convertCurrency() {
     const response = await fetch(url);
     const data = await response.json();
 
-    if (data.success) {
+    if (data.result !== undefined) {
       const converted = data.result.toFixed(2);
       resultDiv.innerText = `${amount} ${fromCurrency} = ${converted} ${toCurrency}`;
     } else {
