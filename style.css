@@ -1,76 +1,104 @@
+/* Reset style */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #00b4db, #0083b0);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body style with background image */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("currency.jpg"); /* Badilisha jina la picha kama unataka */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Converter container */
+.converter {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading */
+.converter h2 {
+  margin-bottom: 20px;
+  color: #0083b0;
+}
+
+/* Input & dropdowns */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Convert button */
+button {
+  background-color: #0083b0;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+/* Result display */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer style */
+footer {
+  text-align: center;
+  color: rgb(5, 0, 0);
+  font-size: 14px;
+  background-color: rgba(191, 218, 236, 0.6);
+  padding: 12px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .converter {
     padding: 20px;
   }
-  
-  .converter {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .converter h2 {
-    margin-bottom: 20px;
-    color: #0083b0;
-  }
-  
-  input, select {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #0083b0;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #005f73;
-  }
-  
-  #result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Media query for smaller devices */
-  @media (max-width: 500px) {
-    .converter {
-      padding: 20px;
-    }
-  
-    input, select, button {
-      font-size: 15px;
-      padding: 10px;
-    }
-  }
-  
 
+  input, select, button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

@@ -13,32 +13,34 @@ It uses the [ExchangeRate.host API](https://exchangerate.host) to convert amount
 ## Live Demo
 
 Check it out live here:  
-**[https://samweli-dotcom.github.io/currency-converter](https://samweli-dotcom.github.io/currency-converter)**  
-> *(Link hii itaanza kufanya kazi baada ya kuwasha GitHub Pages)*
+**[https://your-username.github.io/currency-converter](https://your-username.github.io/currency-converter)**  
+> *(Replace `your-username` with your actual GitHub username)*
 
 ## How to Use
 
-1. Enter an amount
-2. Choose the currency to convert **from**
-3. Choose the currency to convert **to**
-4. Click **Convert**
+1. Enter an amount  
+2. Choose the currency to convert **from**  
+3. Choose the currency to convert **to**  
+4. Click **Convert**  
 5. Result will be displayed instantly
+
+## Run Locally
+
+To run this project locally on your computer:
+
+1. Clone or download this repository.  
+2. Make sure you have a code editor like [Visual Studio Code](https://code.visualstudio.com/).  
+3. Install the **Live Server** extension (if using VS Code).  
+4. Open `index.html` using Live Server.
+
+> ⚠️ Opening the file directly (`file://`) may prevent the API from working due to browser security restrictions.
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (with responsive design)
-- JavaScript (ES6+)
+- HTML5  
+- CSS3 (with responsive design)  
+- JavaScript (ES6+)  
 - [ExchangeRate.host API](https://exchangerate.host)
 
-## Screenshots
+## Project Structure
 
-![Screenshot](screenshot.png)
-
-## License
-
-This project is open source and free to use under the [MIT License](LICENSE).
-
----
-
-*Created with love by Samweli Salvatory Lihawa*
